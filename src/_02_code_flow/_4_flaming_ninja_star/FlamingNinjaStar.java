@@ -10,16 +10,29 @@ public class FlamingNinjaStar {
 		int flameSize = 130;		//the length of the flaming arms
 		
 		// Make a new robot, and set it's pen down.
-
+Robot Bob = new Robot();
+Bob.penDown();
 		// Set the robot speed to 100
-		
+		Bob.setSpeed(100);
 		// Set the robot window size to 800 x 800
-
+Bob.setWindowSize(800, 800);
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
-		
+		int count = 0;
 	       //  LOOP. Start a while loop to repeat all of the code below ONE time (we will change this later)
-
+while (count<25) {
+	Bob.turn(360/8);
+	Bob.move(64);
+	Bob.turn(-40);
+	Bob.setPenColor(Color.CYAN);
+	Bob.move(flameSize);
+	Bob.turn(170);
+	Bob.move(flameSize);
+	Bob.turn(64);
+	Bob.setPenColor(Color.BLACK);
+	Bob.move(baseSize);
+	count++;
+}
 			   // TURN RIGHT     Turn the robot 1/8 of a circle (hint: 360 degrees will turn a full circle)
 		
 			   // MOVE           Move the robot 64 pixels
