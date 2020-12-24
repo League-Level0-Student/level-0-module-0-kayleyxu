@@ -5,11 +5,9 @@
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-boolean canPlaySounds = true;
+boolean canPlaySounds = false;
 
-import processing.sound.*;
-SoundFile meow;
-SoundFile woof;
+
 PImage cat;
 PImage dog;
 PImage space;
@@ -30,8 +28,7 @@ void setup() {
 //  If you want to change the images and sounds, change the file names here, but you must
 //  also drag and drop the new files onto the sketch before you run the program.  
 
-  meow = new SoundFile(this, "meow.wav");
-  woof = new SoundFile(this, "woof.wav");
+  
   cat = loadImage("lion.png");
   dog = loadImage("dog.png");
   space = loadImage("space.png");
